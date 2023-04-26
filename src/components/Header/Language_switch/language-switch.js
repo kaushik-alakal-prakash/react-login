@@ -31,16 +31,7 @@ class LanguageSwitch extends Component {
       <div className='language-switch-container'>
         <ul className='menu-left'>
           <li>
-            <a href="#">for landlords</a>
-          </li>
-          <li>
             <a href="#">login</a>
-          </li>
-          <li>
-            <a href="#" onClick={(e) => this.toggleDropDown(e)}>EN</a>
-            {this.state.menuClosed
-              ? menu
-              : null}
           </li>
         </ul>
       </div>

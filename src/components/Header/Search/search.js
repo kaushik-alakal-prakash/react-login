@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from '../../../homelike.png';
+import logo from '../../Assets/favicon.ico';
 class Search extends Component {
   citiesUrl = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cd' +
       'ddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
@@ -54,17 +54,6 @@ class Search extends Component {
         <a href="" className='logo'>
           <img src={logo} alt=""/>
         </a>
-        <div className='search-input'>
-          <input
-            value={this.state.searchText}
-            type="text"
-            onChange={(type) => this.search(type)}
-            placeholder='Which city are you interested in?'/>
-          <ul className='search-result-menu '>{this.state.showResults
-              ? results
-              : null}</ul>
-
-        </div>
       </div>
 
     );

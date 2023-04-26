@@ -5,7 +5,6 @@ import LoginManual from './Login_manual/login-manual.js';
 class Login extends Component {
   render() {
     return <div className='container-fluid big-bg'>
-      <LoginSM/>
       <LoginManual/>
     </div>;
   }
